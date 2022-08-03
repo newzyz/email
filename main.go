@@ -142,8 +142,9 @@ func sendMailByGoMail(c echo.Context) error {
 	// Set E-Mail body. You can set plain text or html with text/html
 	m.SetBody("text/html", result)
 
-	// Attach File
-	// m.Attach("./img")
+	// Attach Files
+	// m.Attach("./img/rabbit.jpg")
+	// m.Attach("./img/rabbit.jpg")
 
 	// Settings for SMTP server
 	d := gomail.NewDialer("smtp.gmail.com", 587, from, password)
